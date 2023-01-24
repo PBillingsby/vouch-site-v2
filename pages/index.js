@@ -14,11 +14,11 @@ export default function Home() {
         <div className="bg-[#5379F6] h-[100px] content-center flex gap-10 md:gap-2 items-center w-full">
           <img src="./logo.png" className="md:px-12 md:absolute w-1/3 md:w-1/4 md:left-10" />
           <div className="flex gap-2 md:absolute md:p-[10rem] right-0">
-            <button className="rounded-lg p-1 md:py-2 md:px-4 md:btn bg-white text-[#5379F6]">Get Vouched</button>
-            <button className="rounded-lg p-1 md:py-4 md:px-4 md:btn bg-white text-[#5379F6]">Developers</button>
+            <button className="rounded-lg p-1 md:py-2 md:px-4 md:btn bg-white text-[#5379F6] hover:bg-[#5379F6] hover:text-white hover:border hover:border-white">Get Vouched</button>
+            <button className="rounded-lg p-1 md:py-4 md:px-4 md:btn bg-white text-[#5379F6] hover:bg-[#5379F6] hover:text-white hover:border hover:border-white">Developers</button>
           </div>
         </div>
-        <div className="md:flex gap-20">
+        <div className="flex gap-20">
           <div className="md:w-[35rem] p-4 md:m-[6rem]">
             <p className="text-4xl font-medium text-[#5379F6]">Decentralized Verification for Arweave Wallets.</p>
             <p className="py-2 font-extralight">VouchDAO allows users to verify once and be trusted everywhere on the Permaweb, while allowing developers to verify them with 2 lines of code.</p>
@@ -40,7 +40,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <img src="./hero-image.png" className="w-[677px] md:order-last" />
+          <img src="./hero-image.png" className="md:w-[677px]  order-first md:order-last" />
         </div>
         <div className="bg-[#5379F6] h-auto py-4 w-full flex gap-10 justify-content justify-center">
           <a href="https://twitter.com/vouchdao" target="_blank" rel="noreferrer" >
