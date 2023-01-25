@@ -18,7 +18,7 @@ export default function Home() {
             <img src="./logo.png" className="" width="200px" height="100px" />
 
             <div
-              className={`z-10 md:w-auto w-full ml-auto md:relative absolute right-0 md:bg-transparent  bg-white top-[100px] ${
+              className={`z-10 md:w-auto w-full ml-auto md:relative absolute right-0 md:bg-transparent  bg-white md:top-0 top-[100px] ${
                 IsNavOpen ? "visible" : "invisible"
               } md:visible`}
             >
