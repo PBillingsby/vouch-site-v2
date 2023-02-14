@@ -3,6 +3,14 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+@layer base {
+
+  ul,
+  ol {
+    list-style: revert;
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

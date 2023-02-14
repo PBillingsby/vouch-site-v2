@@ -4,13 +4,14 @@ const nextConfig = {
   images: {
     loader: "custom"
   },
-  trailingSlash: true,
   assetPrefix: './',
-  webpack5: true,
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false };
-    return config;
-  },
+  exportPathMap: async function (defaultPathMap) {
+    return {
+      '/': { page: '/', query: { __nextDefaultLocale: 'en' } },
+      '/propose': { page: '/propose', query: { __nextDefaultLocale: 'en' } },
+      ...defaultPathMap
+    }
+  }
 }
 
 module.exports = nextConfig
